@@ -1,0 +1,168 @@
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+    &__logo {
+            font-style: normal;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 800;
+            text-decoration: none;
+            color:white;
+    }
+    &__item {
+        max-width: 345px;
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+            max-width: 100%;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    &__copy {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        /* identical to box height */
+        margin-top: 96px;
+        max-width: 168px;
+        color: $copy;
+        @media (max-width: $breakpoint768) {
+            margin-top: 15px;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        /* identical to box height */
+        margin-top: 38px;
+
+        color: white;
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 15px;
+        }
+    }
+    &__social {
+        display: flex;
+        margin-top: 32px;
+        justify-content: space-between;
+        padding: 0;
+        padding-right: 55px;
+        @media (max-width: $breakpoint768){
+            padding: 0;
+        }
+    }
+    &__social-item {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            transform: translateY(-5px);
+            transition: .3s all ease;
+            .social__path-youtubeRed {
+                fill: #cd201f;
+                transition: .3s all ease;
+                
+            }
+            .social__path-youtubeWhite{
+                fill: white;
+                transition: .3s all ease;
+            }
+            .social__path-twitter {
+                fill: #1DA1F2;
+                transition: .3s all ease;
+            }
+
+        }
+        cursor: pointer;
+    }
+    &__link {
+        display: flex;
+    }
+    &__input {
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        padding: 21px 60px 21px 20px;
+        &:focus{
+            outline: 1px solid $blue;
+        }
+        width: 100%;
+    }
+    &__btn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background: $blue;
+        border-radius: 4px;
+        border: none;
+        right: 8px;
+        top: 8px;
+        bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background: $blueDark;
+            transition: .3s all ease;
+        }
+        
+    }
+    &__linkedin:hover {
+        background: #2867B2;
+        transition: .3s all ease;
+    }
+    &__discord:hover {
+        background: #5865F2;
+        transition: .3s all ease;
+    }
+}
+
+.section__footer {
+    background: $text;
+    padding-top: 65px;
+    padding-bottom: 90px;
+    @media (max-width: $breakpoint600) {
+        padding-top: 30px;
+    }
+}
+.footer__sizer {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.form {
+    &__label {
+        background: white;
+        border-radius: 4px;
+        margin-top: 12px;
+        position: relative;
+        display: flex;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+
+}
+
